@@ -1,0 +1,235 @@
+html {
+  --font-stack: "Mulish", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-stack);
+}
+
+.map-container {
+  max-width: 1280px;
+  margin: auto;
+  margin-top: 50px;
+}
+.map-container .container-inner {
+  display: flex;
+  margin: 0 -15px;
+}
+.map-container .filter-wrap {
+  width: 24%;
+  padding: 0 15px;
+}
+.map-container .map-wrap {
+  width: 76%;
+  padding: 0 15px;
+}
+
+.map-wrap #map-canvas {
+  height: 684px;
+}
+
+.map-inner,
+#map-canvas {
+  height: 100%;
+  position: relative;
+}
+
+.filter-heading {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 60px;
+  letter-spacing: -0.02em;
+  color: #3C3C3C;
+}
+
+.select-wrap select {
+  display: block;
+  width: 100%;
+}
+.select-wrap .select2-container .select2-selection--single {
+  border: 1px solid #F0F3F3;
+  border-radius: 3px;
+  height: 56px;
+}
+.select-wrap .select2-container--default .select2-selection--single .select2-selection__rendered {
+  line-height: 56px;
+}
+.select-wrap .select2-container--default .select2-selection--single {
+  position: relative;
+}
+.select-wrap .select2-container--default .select2-selection--single .select2-selection__arrow {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url(../images/icon-arrow-up.svg) no-repeat center center;
+  position: absolute;
+  right: 10px;
+  top: 17px;
+}
+.select-wrap .select2-container--default .select2-selection--single .select2-selection__arrow b {
+  display: none;
+}
+
+.filter + .filter {
+  margin-top: 50px;
+}
+.filter input[type=text] {
+  display: block;
+  width: 100%;
+  border: 0;
+  -webkit-appearance: none;
+          appearance: none;
+  outline: 0;
+  background: #F7F9F9;
+  border-radius: 3px;
+  height: 48px;
+  padding: 8px 10px;
+}
+.filter i.search-icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url(../images/icon-search.png) no-repeat center center;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.filter .search-name {
+  position: relative;
+}
+.filter .filter-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.2;
+}
+.filter #types > div {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.filter #types > div + div {
+  margin-top: 10px;
+}
+.filter #types .checkbox-type {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.iw {
+  font-weight: 500;
+  font-size: 13px;
+}
+.iw .iw-header, .iw .iw-content {
+  background: #fff;
+  padding: 16px;
+}
+.iw .iw-header {
+  font-size: 14px;
+  display: flex;
+  align-content: center;
+  padding-bottom: 15px;
+  padding-bottom: 15px;
+  font-weight: 600;
+  position: relative;
+}
+.iw .iw-header img {
+  margin-right: 10px;
+  margin-top: -2px;
+}
+.iw .iw-header:after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: calc(100% - 32px);
+  background: #D9E1E2;
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+  right: 16px;
+}
+.iw .iw-name {
+  font-weight: 600;
+  font-size: 18px;
+  margin-top: 0;
+}
+.iw .iw-address .label {
+  display: flex;
+  width: 100%;
+  align-content: center;
+  justify-content: space-between;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.iw .iw-address .label a {
+  display: inline-block;
+  text-indent: -9999px;
+  width: 78px;
+  height: 19px;
+  background: url("../images/icon-address.svg") no-repeat center center;
+}
+.iw .iw-main-content {
+  padding-bottom: 10px;
+  padding-top: 15px;
+}
+
+.gm-style {
+  font-family: var(--font-stack);
+  font-size: 13px;
+}
+
+.gm-style .gm-style-iw-c,
+.gm-style-iw-d {
+  border-radius: 0;
+  padding: 0;
+  overflow: hidden !important;
+}
+
+.gm-style .gm-style-iw-t::after {
+  content: none;
+}
+
+.gm-style .gm-style-iw-c {
+  background: transparent !important;
+  box-shadow: unset !important;
+}
+
+button[title=Close] {
+  top: 4px !important;
+  right: 4px !important;
+}
+button[title=Close] span {
+  -webkit-mask-image: unset !important;
+  background: url("../images/icon-x.svg") no-repeat center center !important;
+  width: 20px !important;
+  height: 20px !important;
+  margin: 0 !important;
+}
+
+.button-register {
+  padding: 16px;
+  gap: 10px;
+  background: #1464F4;
+  border-radius: 0px 0px 3px 3px;
+  display: flex;
+  width: 100%;
+  align-content: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}

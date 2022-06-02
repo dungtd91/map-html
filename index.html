@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Map Find Us</title>
+    <link rel="stylesheet" href="//necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+    <div class="map-container">
+        <div class="container-inner">
+            <div class="filter-wrap">
+                <h2 class="filter-heading">Tìm chúng tôi</h2>
+                <div class="filter search">
+                    <div class="filter-inner">
+                        <div class="search-name">
+                            <input type="text" id="search-autocomplete" class="search-name" placeholder="Tên địa điểm">
+                            <i class="search-icon">
+                            </i>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter filter-type">
+                    <div class="filter-inner">
+                        <h2 class="filter-title">Quý khách đang muốn tìm</h2>
+                        <div id="types"></div>
+                    </div>
+                </div>
+                <div class="filter filter-address">
+                    <div class="filter-inner">
+                        <h2 class="filter-title">Khu vực tìm kiếm</h2>
+                        <div class="select-wrap">
+                            <select name="city" id="city">
+                                <option value="">Tỉnh thành</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="map-wrap">
+
+                <div class="map-inner">
+                    <div id="map-canvas"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js" integrity="sha512-2ImtlRlf2VVmiGZsjm9bEyhjGW4dU7B6TNwh/hx/iSByxNENtj3WVE6o/9Lj4TJeVXPi4bnOIMXFIJJAeufa0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://maps.googleapis.com/maps/api/js?libraries=geometry,places&sensor=false&key=AIzaSyA3KmqvQBA6AywIadECVTJwqChQTgiHPLc"></script>
+<script src="js/data.js"></script>
+<script src="js/map-style.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
